@@ -1,5 +1,5 @@
 <template>
-  <div class="control is-expanded has-icons-left">
+  <div class="control is-expanded has-icons-left has-icons-right">
     <!-- Calendar Button -->
     <span class="icon is-small is-left calendar-icon">
       <i class="fas fa-calendar"></i>
