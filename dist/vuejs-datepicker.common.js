@@ -639,9 +639,11 @@ var __vue_render__ = function() {
         ? _c(
             "span",
             {
-              staticClass: "icon is-small is-right date-clear-button",
+              staticClass:
+                "icon is-right date-clear-button vdp-datepicker__clear-button",
               on: {
                 click: function($event) {
+                  $event.preventDefault();
                   return _vm.clearDate()
                 }
               }
@@ -660,7 +662,7 @@ var __vue_staticRenderFns__ = [
     var _vm = this;
     var _h = _vm.$createElement;
     var _c = _vm._self._c || _h;
-    return _c("span", { staticClass: "icon is-small is-left calendar-icon" }, [
+    return _c("span", { staticClass: "icon is-left calendar-icon" }, [
       _c("i", { staticClass: "fas fa-calendar" })
     ])
   }

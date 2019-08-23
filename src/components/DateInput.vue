@@ -1,7 +1,7 @@
 <template>
   <div class="control is-expanded has-icons-left has-icons-right">
     <!-- Calendar Button -->
-    <span class="icon is-small is-left calendar-icon">
+    <span class="icon is-left calendar-icon">
       <i class="fas fa-calendar"></i>
     </span>
     <!-- Input -->
@@ -23,7 +23,7 @@
       @blur="inputBlurred"
       autocomplete="off">
     <!-- Clear Button -->
-    <span class="icon is-small is-right date-clear-button" v-if="clearButton && selectedDate" @click="clearDate()">
+    <span class="icon is-right date-clear-button vdp-datepicker__clear-button" v-if="clearButton && selectedDate" @click.prevent="clearDate()">
       <i class="fas fa-times-circle"></i>
     </span>
     <slot name="afterDateInput"></slot>
