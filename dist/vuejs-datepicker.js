@@ -612,7 +612,7 @@
     var _c = _vm._self._c || _h;
     return _c(
       "div",
-      { staticClass: "control is-expanded has-icons-left" },
+      { staticClass: "control is-expanded has-icons-left has-icons-right" },
       [
         _vm._m(0),
         _vm._v(" "),
