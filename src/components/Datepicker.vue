@@ -13,7 +13,7 @@
       :placeholder="placeholder"
       :inputClass="inputClass"
       :typeable="typeable"
-      :clearButton="clearButton"
+      :clearButton="true"
       :clearButtonIcon="clearButtonIcon"
       :calendarButton="calendarButton"
       :calendarButtonIcon="calendarButtonIcon"

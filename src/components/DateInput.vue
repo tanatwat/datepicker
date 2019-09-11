@@ -44,12 +44,7 @@ export default {
     openDate: Date,
     placeholder: String,
     inputClass: [String, Object, Array],
-    clearButton: {
-      type: Boolean,
-      default: () => {
-        return true
-      }
-    },
+    clearButton: Boolean,
     clearButtonIcon: String,
     calendarButton: Boolean,
     calendarButtonIcon: String,
