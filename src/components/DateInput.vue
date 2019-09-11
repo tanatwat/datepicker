@@ -6,8 +6,8 @@
     </span>
     <!-- Input -->
     <input
+      class="input date-input"
       :type="inline ? 'hidden' : 'text'"
-      :class="computedInputClass"
       :name="name"
       :ref="refName"
       :id="id"
@@ -44,7 +44,12 @@ export default {
     openDate: Date,
     placeholder: String,
     inputClass: [String, Object, Array],
-    clearButton: Boolean,
+    clearButton: {
+      type: Boolean,
+      default: () => {
+        return true
+      }
+    },
     clearButtonIcon: String,
     calendarButton: Boolean,
     calendarButtonIcon: String,

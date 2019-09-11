@@ -416,7 +416,12 @@
       openDate: Date,
       placeholder: String,
       inputClass: [String, Object, Array],
-      clearButton: Boolean,
+      clearButton: {
+        type: Boolean,
+        "default": function _default() {
+          return true;
+        }
+      },
       clearButtonIcon: String,
       calendarButton: Boolean,
       calendarButtonIcon: String,
@@ -621,7 +626,7 @@
         _vm._v(" "),
         _c("input", {
           ref: _vm.refName,
-          class: _vm.computedInputClass,
+          staticClass: "input date-input",
           attrs: {
             type: _vm.inline ? "hidden" : "text",
             name: _vm.name,
